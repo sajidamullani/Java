@@ -1,0 +1,9 @@
+<form (submit)="submit()">
+    <label>Account Number</label>
+    <input type="number" name="accNo" [(ngModel)]="accNo">
+    <label>Accountholder Name</label>
+    <input type="text" name="accName" [(ngModel)]="accName">
+    <label>Balance</label>
+    <input type="number" name="balance" [(ngModel)]="balance">
+    <button type="submit">Add Account</button>
+</form>

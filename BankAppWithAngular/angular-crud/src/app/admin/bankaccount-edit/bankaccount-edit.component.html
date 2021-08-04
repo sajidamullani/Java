@@ -1,0 +1,11 @@
+<form [formGroup]="form" (submit)="submit()">
+    <label>ID</label>*dont edit the id
+    <input type="number" name="id" formControlName="id" [(ngModel)]="id" autocomplete="off" [disabled]="true" required>
+    <label>Account Number</label>
+    <input type="number" name="accNo" formControlName="accNo">
+    <label>Accountholder Name</label>
+    <input type="text" name="accName" formControlName="accName">
+    <label>Balance</label>
+    <input type="number" name="balance" formControlName="balance">
+    <button type="submit">Save</button>
+</form>
